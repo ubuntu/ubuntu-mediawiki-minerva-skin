@@ -1,0 +1,25 @@
+services:
+  db:
+    image: mariadb:10.11
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: mediawiki
+      MYSQL_USER: mediawiki
+      MYSQL_PASSWORD: mediawiki
+    volumes:
+      - db-data:/var/lib/mysql
+
+  mediawiki:
+    image: mediawiki:1.46
+    environment:
+      UBUNTU_MINERVA_PORT: ${UBUNTU_MINERVA_PORT:-8082}
+    ports:
+      - "${UBUNTU_MINERVA_PORT:-8082}:80"
+    volumes:
+      - .:/var/www/html/skins/UbuntuMinervaNeue
+      - ./composer.local.json:/var/www/html/composer.local.json
+    depends_on:
+      - db
+
+volumes:
+  db-data: {}

@@ -1,0 +1,26 @@
+Welcome to the local Ubuntu Minerva test wiki.
+
+This wiki runs the Ubuntu Minerva skin from a live-mounted checkout. Changes to
+the skin and the UbuntuWiki extension appear after a page reload.
+
+== Skin test pages ==
+
+* [[Preferences]] - night mode, limited width, and persistent menus
+* [[TOC test]] - sticky table of contents, section collapsing, and scroll spy
+* [[Wide tables]] - responsive layout and long unbreakable strings
+* [[Tables]] - styled and unstyled wikitables
+
+== Shared UbuntuWiki test pages ==
+
+* [[Code block examples]] - copy buttons on Ubuntu code blocks
+* [[Syntax highlighting]] - highlighted code in several languages
+* [[Template examples]] - admonitions and message boxes
+
+== Useful things to try ==
+
+* Resize the browser around the mobile breakpoints and check the header, menu,
+  content, table of contents, and footer.
+* Switch between light and dark mode, then reload the page.
+* Open [[Special:Version]] to check the loaded skin and extensions.
+* Log in as <code>admin</code> with the password printed by <code>make setup</code>
+  to test server-side preference persistence.
