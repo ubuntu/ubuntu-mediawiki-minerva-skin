@@ -1,0 +1,38 @@
+The UbuntuWiki extension adds a copy button to code blocks produced by on-wiki templates or raw HTML. These examples exercise both forms in the Minerva skin.
+
+== Via template ==
+
+{{Code block|sudo apt update && sudo apt install ubuntu-desktop}}
+
+== Raw HTML block ==
+
+<div class="ubuntu-code-block"><pre>snap install --classic code</pre></div>
+
+== Custom labels ==
+
+<div class="ubuntu-code-block" data-copy-label="Copy this command" data-copied-label="Command copied!"><pre>flatpak install flathub org.gnome.Calculator</pre></div>
+
+== Inline code element ==
+
+<div class="ubuntu-code-block"><code>lsb_release -a</code></div>
+
+== Focus order ==
+
+The copy button inherits a positive tabindex from the next focusable element after the block. Tab from the copy button below: focus should land on the link.
+
+<div class="ubuntu-code-block"><pre>whoami</pre></div>
+<a href="#focus-order" tabindex="1">Focusable link (tabindex=1)</a>
+
+== Not enhanced: plain pre ==
+
+A <code>&lt;pre&gt;</code> without the wrapper class gets no button:
+
+<pre>no .ubuntu-code-block wrapper here</pre>
+
+== SyntaxHighlight comparison ==
+
+SyntaxHighlight output is a different markup shape and is intentionally not enhanced:
+
+<syntaxhighlight lang="bash">
+sudo apt update
+</syntaxhighlight>

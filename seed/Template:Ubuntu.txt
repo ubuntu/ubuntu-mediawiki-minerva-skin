@@ -1,0 +1,3 @@
+<includeonly>{{Mbox|type=ubuntu|label={{{label|}}}|text={{{text|{{{1|}}}}}}}}</includeonly><noinclude>Creates an Ubuntu message box.
+
+Usage: <nowiki>{{Ubuntu|label=Welcome|text=Welcome text}}</nowiki></noinclude>

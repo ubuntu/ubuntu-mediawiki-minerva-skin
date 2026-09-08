@@ -11,3 +11,6 @@
 /tmp
 /.resolve-less-imports
 /.phpunit.result.cache
+
+# Local development config (copy of LocalSettings.example.php)
+LocalSettings.php

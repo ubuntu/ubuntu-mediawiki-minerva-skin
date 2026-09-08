@@ -1,0 +1,20 @@
+The Ubuntu Minerva skin exposes several user-facing toggles. This page lists what to change and what to check, for both anonymous and logged-in sessions.
+
+== Night mode ==
+
+* Check the night mode toggle, switching between dark, light, and system. This persists on page reload and as a user preference when logged in.
+* Check code blocks, admonition boxes ([[Template examples]]), and tables ([[Wide tables]]) for readable night-mode colours.
+
+== Content width ==
+
+* Open '''Special:Preferences''' and check the available appearance preferences.
+* Compare this page with [[TOC test]] after changing the content-width setting.
+
+== Menus ==
+
+* Open and close the main menu, page actions, and personal menu.
+* Reload after changing a preference and check that the layout does not flash into the wrong state.
+
+== Not logged in? ==
+
+Anonymous users can still exercise client-side preference persistence. Log in as <code>admin</code> (see the setup output) to test server-side preference storage.
