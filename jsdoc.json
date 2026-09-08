@@ -19,7 +19,7 @@
 			"useLongnameInNav": true
 		},
 		"wmf": {
-			"repository": "https://gerrit.wikimedia.org/g/mediawiki/skins/MinervaNeue/",
+			"repository": "https://github.com/ubuntu/ubuntu-mediawiki-minerva-skin/",
 			"prefixMap": {
 				"mw.": "https://doc.wikimedia.org/mediawiki-core/master/js/{type}.html"
 			},

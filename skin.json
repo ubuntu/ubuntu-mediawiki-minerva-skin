@@ -1,7 +1,7 @@
 {
-	"name": "MinervaNeue",
-	"namemsg": "skinname-minerva",
-	"descriptionmsg": "minerva-skin-desc",
+	"name": "UbuntuMinervaNeue",
+	"namemsg": "skinname-ubuntu-minerva",
+	"descriptionmsg": "ubuntu-minerva-skin-desc",
 	"author": [
 		"[https://www.mediawiki.org/wiki/Readers/Web/Team Readers Web Team]",
 		"Alex Hollender",
@@ -16,13 +16,17 @@
 		"Nick Ray",
 		"Sam Smith",
 		"Stephen Niedzielski",
-		"Volker E."
+		"Volker E.",
+		"Ubuntu Developers"
 	],
 	"type": "skin",
-	"url": "https://www.mediawiki.org/wiki/Skin:MinervaNeue",
+	"url": "https://github.com/ubuntu/ubuntu-mediawiki-minerva-skin",
 	"license-name": "GPL-2.0-or-later",
 	"requires": {
-		"MediaWiki": ">= 1.46"
+		"MediaWiki": ">= 1.46",
+		"extensions": {
+			"UbuntuWiki": "*"
+		}
 	},
 	"config": {
 		"MinervaDonateBanner": {
@@ -125,7 +129,7 @@
 		}
 	},
 	"ValidSkinNames": {
-		"minerva": {
+		"ubuntu-minerva": {
 			"class": "MediaWiki\\Minerva\\Skins\\SkinMinerva",
 			"services": [
 				"GenderCache",
@@ -148,7 +152,7 @@
 			],
 			"args": [
 				{
-					"name": "minerva",
+					"name": "ubuntu-minerva",
 					"templateDirectory": "includes/Skins",
 					"templateSectionLinks": "SectionLinks",
 					"wrapSiteNotice": true,
@@ -189,6 +193,9 @@
 					],
 					"clientPrefEnabled": true,
 					"responsive": true,
+					"bodyClasses": [
+						"skin-minerva"
+					],
 					"link": {
 						"text-wrapper": {
 							"tag": "span"
@@ -239,19 +246,19 @@
 		"OutputPageBodyAttributes": "main"
 	},
 	"SkinLessImportPaths": {
-		"minerva": "resources/mediawiki.less"
+		"ubuntu-minerva": "resources/mediawiki.less"
 	},
 	"MessagesDirs": {
-		"MinervaNeue": [
+		"UbuntuMinervaNeue": [
 			"i18n"
 		]
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
-		"remoteSkinPath": "MinervaNeue"
+		"remoteSkinPath": "UbuntuMinervaNeue"
 	},
 	"ResourceModuleSkinStyles": {
-		"minerva": {
+		"ubuntu-minerva": {
 			"mediawiki.tempUserBanner": [
 				"skinStyles/mediawiki.tempUserBanner.less"
 			],
@@ -495,7 +502,7 @@
 		},
 		"skins.minerva.search": {
 			"localBasePath": "resources/skins.minerva.search",
-			"remoteSkinPath": "MinervaNeue/resources/resources/skins.minerva.search",
+			"remoteSkinPath": "UbuntuMinervaNeue/resources/resources/skins.minerva.search",
 			"dependencies": [
 				"mediawiki.page.ready",
 				"mediawiki.router",
@@ -517,7 +524,7 @@
 		},
 		"skins.minerva.scripts": {
 			"localBasePath": "resources/skins.minerva.scripts",
-			"remoteSkinPath": "MinervaNeue/resources/skins.minerva.scripts",
+			"remoteSkinPath": "UbuntuMinervaNeue/resources/skins.minerva.scripts",
 			"dependencies": [
 				"skins.minerva.icons",
 				"skins.minerva.styles",
@@ -601,7 +608,7 @@
 	},
 	"QUnitTestModule": {
 		"localBasePath": "tests/qunit/skins.minerva.scripts",
-		"remoteSkinPath": "MinervaNeue/tests/qunit/skins.minerva.scripts",
+		"remoteSkinPath": "UbuntuMinervaNeue/tests/qunit/skins.minerva.scripts",
 		"dependencies": [
 			"mediawiki.cookie",
 			"skins.minerva.scripts",

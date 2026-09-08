@@ -127,7 +127,7 @@ class SkinMinervaTest extends MediaWikiIntegrationTestCase {
 			$services->getService( 'Vector.ConfigHelper' ),
 			$services->getService( 'TestKitchen.ExperimentManager' ),
 			[
-				'name' => 'minerva',
+				'name' => 'ubuntu-minerva',
 				'menus' => [
 					'notifications',
 					'associated-pages'
@@ -193,7 +193,7 @@ class SkinMinervaTest extends MediaWikiIntegrationTestCase {
 		$context->setActionName( 'view' );
 
 		$skinFactory = $this->getServiceContainer()->getSkinFactory();
-		$skin = $skinFactory->makeSkin( 'minerva' );
+		$skin = $skinFactory->makeSkin( 'ubuntu-minerva' );
 
 		$skin->setContext( $context );
 

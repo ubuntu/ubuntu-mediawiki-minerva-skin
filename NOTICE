@@ -1,0 +1,15 @@
+This software is a modified version of the MinervaNeue MediaWiki skin,
+originally developed by the Wikimedia Foundation Readers Web Team and
+contributors.
+
+Original source:
+https://gerrit.wikimedia.org/g/mediawiki/skins/MinervaNeue
+
+Original authors:
+Readers Web Team, Alex Hollender, Bahodir Mansurov, Florian Schmidt,
+Jan Drewniak, Joaquin Hernandez, Jon Robson, Juliusz Gonera, Piotr Miazga,
+Ryan Kaldari, Nick Ray, Sam Smith, Stephen Niedzielski, and Volker E.
+
+Modifications by Ubuntu Developers for the Ubuntu Wiki.
+
+This fork is licensed under GPL-2.0-or-later; see COPYING.

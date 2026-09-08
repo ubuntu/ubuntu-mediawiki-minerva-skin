@@ -128,7 +128,7 @@ class Hooks implements
 	 * @param array $skinProperties
 	 */
 	public function onPreferencesGetLayout( &$useMobileLayout, $skinName, $skinProperties = [] ) {
-		if ( $skinName === 'minerva' ) {
+		if ( $skinName === 'ubuntu-minerva' ) {
 			$useMobileLayout = true;
 		}
 	}
@@ -141,7 +141,7 @@ class Hooks implements
 	 * @return false|void False to stop others from interacting with the hook
 	 */
 	public function onFetchChangesList( $user, $skin, &$list, $groups ) {
-		if ( $skin->getSkinName() === 'minerva' ) {
+		if ( $skin->getSkinName() === 'ubuntu-minerva' ) {
 			// The new changes list (table-based) does not work with Minerva
 			$list = new OldChangesList( $skin->getContext(), $groups );
 			// returning false makes sure $list is used instead.
@@ -223,7 +223,7 @@ class Hooks implements
 	 * @param Config $config
 	 */
 	public function onResourceLoaderGetConfigVars( array &$vars, $skin, Config $config ): void {
-		if ( $skin === 'minerva' ) {
+		if ( $skin === 'ubuntu-minerva' ) {
 			// This is to let the UI adjust itself to a wiki that is always read-only.
 			// Ignore temporary read-only on live wikis, requires heavy DB check (T233458).
 			$vars += [
@@ -267,7 +267,7 @@ class Hooks implements
 		Context $context,
 		array &$config
 	): void {
-		if ( $context->getSkin() === 'minerva' ) {
+		if ( $context->getSkin() === 'ubuntu-minerva' ) {
 			$config['searchModule'] = 'skins.minerva.search';
 			// Enable collapsible styles on Minerva. Projects are already doing this via gadgets
 			// which creates an unpredictable testing environment so it is better to match production.
@@ -284,7 +284,7 @@ class Hooks implements
 	 */
 	public function onDifferenceEngineViewHeader( $differenceEngine ) {
 		$skin = $differenceEngine->getSkin();
-		if ( $skin->getSkinName() !== 'minerva' ) {
+		if ( $skin->getSkinName() !== 'ubuntu-minerva' ) {
 			return;
 		}
 		$differenceEngine->setSlotDiffOptions( [

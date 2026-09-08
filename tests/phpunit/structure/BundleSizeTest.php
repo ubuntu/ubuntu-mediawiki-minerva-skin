@@ -11,6 +11,6 @@ class BundleSizeTest extends \MediaWiki\Tests\Structure\BundleSizeTestBase {
 
 	/** @inheritDoc */
 	public function getSkinName(): string {
-		return 'minerva';
+		return 'ubuntu-minerva';
 	}
 }
